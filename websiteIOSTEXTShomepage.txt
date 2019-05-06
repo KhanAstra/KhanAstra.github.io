@@ -1,0 +1,442 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Personalized iMessage and SMS analysis for your iOS texts."/>
+    <meta name="keywords"
+          content="ios, text analysis, text statistics, sms statistics, sms stats, text stats, iphone, imessages, istats"/>
+
+    <!-- CSRF Token -->
+    <meta name="csrf-token" content="7qc73pmSfVodkJjQv8Z4KEikGQDOzznjdbqjyppu">
+
+    <title>iOS Texts | Analysis of your iOS texts</title>
+
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Styles -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js"
+            integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl"
+            crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="/css/app.css?id=c364f45a2ad26a3c4452" rel="stylesheet">
+    <link href="/css/home.css?id=74e624d7a8817b9a13a5" rel="stylesheet">
+
+<!-- Scripts -->
+    <script>
+      window.Laravel = {"csrfToken":"7qc73pmSfVodkJjQv8Z4KEikGQDOzznjdbqjyppu"}    </script>
+</head>
+
+<body class="shards-landing-page--1">
+
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="https://iostexts.com">
+            iOS Texts
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="https://iostexts.com">Home <span class="sr-only">(current)</span></a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="https://iostexts.com/#features" data-scrollto="features">Features</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://iostexts.com/#testimonials" data-scrollto="testimonials">Testimonials</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://iostexts.com/#pricing" data-scrollto="pricing">Pricing</a>
+                </li>
+            </ul>
+
+            <ul class="navbar-nav ml-auto">
+                                    <li class="nav-item dropdown">
+    <a
+            class="nav-link dropdown-toggle text-nowrap px-3"
+            href="#navdrop"
+            id="navbarDropdownMenuLink"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+    >
+        <img class="user-avatar rounded-circle mr-2" width="50" src="https://graph.facebook.com/v3.0/10214306818763166/picture?type=normal"
+             alt="User Avatar"> Joseph Rahm
+    </a>
+    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+        <a class="dropdown-item" href="https://iostexts.com/members">Members</a>
+        <a class="dropdown-item" href="javascript:void(0)" data-uv-lightbox="classic_widget" data-uv-mode="full"
+           data-uv-primary-color="#fa8c28" data-uv-link-color="#0a8cc6" data-uv-default-mode="feedback"
+           data-uv-forum-id="185075">Feedback &amp; Support</a>
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item text-danger" href="https://iostexts.com/logout"><i
+                    class="material-icons text-danger">&#xE879;</i> Logout</a>
+    </div>
+</li>
+                
+            </ul>
+        </div>
+    </div>
+</nav>
+
+    <!-- Welcome Section -->
+    <div class="d-flex justify-content-center flex-column">
+        <!-- Inner Wrapper -->
+        <!-- Hero Waves Center -->
+        <div class="ui-hero hero-lg hero-center ui-gradient-purple ui-waves hero-svg-layer-1">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h1 class="heading">
+                            iOS Texts
+                        </h1>
+                        <p class="paragraph">
+                            Your personal text stats, displayed using beautiful reports
+                        </p>
+                        <div class="actions">
+                            <a class="btn btn-lg btn-primary btn-pill align-self-center" id="get-started"
+                               href="https://iostexts.com/members"
+                               onclick="$('#get-started').addClass('loading loading-lg disabled')">Get Started for
+                                Free</a>
+                            <br/>
+                            <small>no credit card required</small>
+                        </div>
+                    </div>
+                </div><!-- .row -->
+            </div><!-- .container -->
+        </div><!-- .ui-hero -->
+        <!-- / Inner Wrapper -->
+    </div>
+    <!-- / Welcome Section -->
+
+    <!-- Features Section -->
+    <div id="features" class="features section py-4">
+
+        <h3 class="section-title text-center my-5">Features</h3>
+        <!-- Features -->
+        <div class="features py-4 mb-4">
+            <div class="container">
+                <div class="row">
+                    <div class="feature py-4 col-md-6 d-flex">
+                        <div class="icon text-primary mr-3"><img
+                                    width="45"
+                                    src="/images/home/1f984.png"
+                                    alt="Unicorn"/></div>
+                        <div class="px-4">
+                            <h5>Emojis</h5>
+                            <p>View a table of the emojis you and your friend use the most in a conversation.</p>
+                        </div>
+                    </div>
+                    <div class="feature py-4 col-md-6 d-flex">
+                        <div class="icon text-primary mr-3"><img
+                                    width="45"
+                                    src="/images/home/1f947.png"
+                                    alt="Unicorn"/></div>
+                        <div class="px-4">
+                            <h5>Initiation</h5>
+                            <p>Find out who keeps starting the conversations. You might be slacking,
+                                initiate more!</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="feature py-4 col-md-6 d-flex">
+                        <div class="icon text-primary mr-3"><img
+                                    width="45"
+                                    src="/images/home/1f525.png"
+                                    alt="fire"/></div>
+                        <div class="px-4">
+                            <h5>Texting activity</h5>
+                            <p>Want to know the peak time at which you and your friend text the most? The least? Our
+                                activity charts will show just that. Maybe you only text on weekends, or only after 5pm
+                                every day?</p>
+                        </div>
+                    </div>
+                    <div class="feature py-4 col-md-6 d-flex">
+                        <div class="icon text-primary mr-3"><img
+                                    width="45"
+                                    src="/images/home/1f495.png"
+                                    alt="hearts"/></div>
+                        <div class="px-4">
+                            <h5>Love analysis</h5>
+                            <p>Who said those three magic words (I love you) first? What about who says it most often?
+                                See if the statistics say something about your relationship!</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="feature py-4 col-md-6 d-flex">
+                        <div class="icon text-primary mr-3"><img width="45"
+                                                                 src="/images/home/1f92c.png"
+                                                                 alt="Swear face"/></div>
+                        <div class="px-4">
+                            <h5>Swear words</h5>
+                            <p>Do you have a sailor mouth? The most popular swear words between you and your friend are
+                                displayed.</p>
+                        </div>
+                    </div>
+                    <div class="feature py-4 col-md-6 d-flex">
+                        <div class="icon text-primary mr-3"><img
+                                    width="45"
+                                    src="/images/home/1f4f7.png"
+                                    alt="camera"/></div>
+                        <div class="px-4">
+                            <h5>Media analysis</h5>
+                            <p>By design, we won't be able to see your images or videos, but we will be able to run
+                                reports on the amount of media sent between you and your contacts. Find out who's
+                                sending the most pictures!</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="feature py-4 col-md-6 d-flex">
+                        <div class="icon text-primary mr-3"><img width="45"
+                                                                 src="/images/home/1f60f.png"
+                                                                 alt="smirk"/></div>
+                        <div class="px-4">
+                            <h5>Plus way more</h5>
+                            <p>Check out the <a href="https://iostexts.com/#pricing" data-scrollto="pricing">pricing</a> guide
+                                for more available features!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- / Features -->
+    </div>
+    <!-- / Features Section -->
+
+    <!-- Testimonials Section -->
+    <div id="testimonials" class="testimonials section section-invert py-4">
+        <h3 class="section-title text-center m-5">Testimonials</h3>
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-md-4 testimonial text-center">
+                    <div class="avatar rounded-circle with-shadows mb-3 ml-auto mr-auto">
+                        <img src="/images/home/1.png" class="w-100" alt="Testimonial Avatar"/>
+                    </div>
+                    <h5 class="mb-1">Aaron Zolonak</h5>
+                    <span class="text-muted d-block mb-2">Fan of iOS Texts</span>
+                    <p>I found out that I was texting my girlfriend way more than she was texting me. The app showed me
+                        that I was initiating conversations twice as much as she was. Well I've made some changes to our
+                        relationship, thanks to iOS Texts!</p>
+                </div>
+
+                <div class="col-md-4 testimonial text-center">
+                    <div class="avatar rounded-circle with-shadows mb-3 ml-auto mr-auto">
+                        <img src="/images/home/2.png" class="w-100" alt="Testimonial Avatar"/>
+                    </div>
+                    <h5 class="mb-1">Russell Ratcliffe</h5>
+                    <span class="text-muted d-block mb-2">High school student</span>
+                    <p>I never knew my favorite emoji was the monkey face when texting my girlfriend. This changes
+                        everything.</p>
+                </div>
+
+                <div class="col-md-4 testimonial text-center">
+                    <div class="avatar rounded-circle with-shadows mb-3 ml-auto mr-auto">
+                        <img src="/images/home/3.png" class="w-100"
+                             alt="Testimonial Avatar"/>
+                    </div>
+                    <h5 class="mb-1">Steven Bates</h5>
+                    <span class="text-muted d-block mb-2">CEO at Deephire</span>
+                    <p>Well, suffice to say I no longer text my coworkers between 10pm and midnight when I need
+                        something important. It's clear from the graphs that the best time to ask them questions is at
+                        4pm!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- / Testimonials Section -->
+
+    <!-- Pricing Section -->
+    <div id="pricing" class="pricing section py-4 text-center">
+        <h3 class="section-title m-5">Pricing</h3>
+        <p>Two simple options, Basic for quick stats and Premium for these who need that extra
+            flavor.
+        </p>
+        <p>Try iOS Texts free for 7 days, no credit card required.</p>
+        <div class="container py-5">
+    <div class="row justify-content-center align-items-center">
+        <a href="https://iostexts.com/billing"
+           class="col col-md-4 col-sm-12 plan-item text-center ">
+            <h4>Basic</h4>
+<span class="price basic">$2.99 <small>/ month</small></span>
+<svg class="emblem" width="72px" height="83px" viewBox="0 0 72 83" version="1.1" xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <linearGradient x1="3.061617e-15%" y1="50%" x2="100%" y2="50%" id="pl-1">
+            <stop stop-color="#DDF3F6" offset="0%"></stop>
+            <stop stop-color="#AFDCE1" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g fill="url(#pl-1)">
+            <ellipse cx="41.4176299" cy="15.4176299" rx="15.4176299" ry="15.4176299"></ellipse>
+            <ellipse cx="62" cy="41" rx="10" ry="10"></ellipse>
+            <polygon
+                    points="35.0621555 14 59.1701324 25.6097898 65.124311 51.6967506 48.4410733 72.616869 21.6832377 72.616869 5 51.6967506 10.9541786 25.6097898"></polygon>
+            <ellipse cx="51.4176299" cy="67.4176299" rx="15.4176299" ry="15.4176299"></ellipse>
+            <ellipse cx="10" cy="51" rx="10" ry="10"></ellipse>
+        </g>
+    </g>
+</svg>
+<ul class="list-unstyled">
+    <li>Analysis of the last 60 days</li>
+    <li>Media analysis</li>
+    <li>Time of day</li>
+    <li>Total texts</li>
+    <li>Word count</li>
+</ul>
+
+<small>7 day free trial</small>
+        </a>
+
+        <a href="https://iostexts.com/billing"
+           class="col col-md-4 col-12 plan-item pro text-center selected">
+            <h4>Premium</h4>
+<span class="price premium">$8.99 <small>/ month</small></span>
+<svg class="emblem" width="100px" height="99px" viewBox="0 0 100 99" version="1.1" xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <linearGradient x1="3.061617e-15%" y1="50%" x2="100%" y2="50%" id="api-1">
+            <stop stop-color="#DDF3F6" offset="0%"></stop>
+            <stop stop-color="#AFDCE1" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="3.061617e-15%" y1="50%" x2="100%" y2="50%" id="api-2">
+            <stop stop-color="#9D02F9" offset="0%"></stop>
+            <stop stop-color="#6301F0" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="-1.11022302e-14%" x2="50%" y2="100%" id="api-3">
+            <stop stop-color="#32E7F9" offset="0%"></stop>
+            <stop stop-color="#17CAF0" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="api-4">
+            <stop stop-color="#0063FF" offset="0%"></stop>
+            <stop stop-color="#6302F0" offset="98.1684471%"></stop>
+        </linearGradient>
+        <linearGradient x1="3.061617e-15%" y1="50%" x2="100%" y2="50%" id="api-5">
+            <stop stop-color="#FF4772" offset="0%"></stop>
+            <stop stop-color="#FF4422" offset="97.8117028%"></stop>
+        </linearGradient>
+    </defs>
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g>
+            <polygon fill="url(#api-1)"
+                     points="60.5309508 1.83661722 91.3662106 63.5071369 29.695691 63.5071369"></polygon>
+            <circle fill="url(#api-2)"
+                    transform="translate(72.568542, 21.568542) scale(-1, 1) translate(-72.568542, -21.568542) "
+                    cx="72.5685425" cy="21.5685425" r="10"></circle>
+            <polygon fill="url(#api-3)"
+                     transform="translate(42.568542, 41.568542) scale(-1, 1) rotate(45.000000) translate(-42.568542, -41.568542) "
+                     points="42.5685425 1.56854249 82.5685425 81.5685425 2.56854249 81.5685425"></polygon>
+            <rect fill="url(#api-4)"
+                  transform="translate(42.568542, 61.568542) scale(-1, 1) rotate(45.000000) translate(-42.568542, -61.568542) "
+                  x="32.5685425" y="51.5685425" width="20" height="20"></rect>
+            <polygon fill="url(#api-5)"
+                     transform="translate(12.568542, 71.073387) scale(-1, 1) translate(-12.568542, -71.073387) "
+                     points="12.5685425 61.5685425 20.3868573 65.3336445 22.3178216 73.7937518 16.9073799 80.5782312 8.2297051 80.5782312 2.81926337 73.7937518 4.75022767 65.3336445"></polygon>
+        </g>
+    </g>
+</svg>
+<svg class="bg" width="392px" height="268px" viewBox="0 0 392 268" version="1.1" xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <linearGradient x1="3.061617e-15%" y1="50%" x2="100%" y2="50%" id="apbg-1">
+            <stop stop-color="#FF4772" offset="0%"></stop>
+            <stop stop-color="#FF4422" offset="97.8117028%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="-1.11022302e-14%" x2="50%" y2="100%" id="apbg-2">
+            <stop stop-color="#32E7F9" offset="0%"></stop>
+            <stop stop-color="#17CAF0" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="3.061617e-15%" y1="50%" x2="100%" y2="50%" id="apbg-3">
+            <stop stop-color="#DDF3F6" offset="0%"></stop>
+            <stop stop-color="#AFDCE1" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="3.061617e-15%" y1="50%" x2="100%" y2="50%" id="apbg-4">
+            <stop stop-color="#FFC505" offset="0%"></stop>
+            <stop stop-color="#FFB801" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g>
+            <ellipse fill="url(#apbg-1)" cx="16.3684793" cy="179.520964" rx="15.4176299" ry="15.4176299"></ellipse>
+            <ellipse fill="url(#apbg-2)" cx="376.41763" cy="167.41763" rx="15.4176299" ry="15.4176299"></ellipse>
+            <polygon fill="url(#apbg-3)"
+                     points="318 228 334.038755 235.723857 338 253.079207 326.900837 266.997116 309.099163 266.997116 298 253.079207 301.961245 235.723857"></polygon>
+            <ellipse fill="url(#apbg-4)" cx="103.456629" cy="31.5975551" rx="30.8352598" ry="30.8352598"></ellipse>
+            <polygon fill="url(#apbg-3)"
+                     points="287.632928 29.9270354 311.740905 41.5368252 317.695083 67.6237861 301.011846 88.5439044 274.25401 88.5439044 257.570772 67.6237861 263.524951 41.5368252"></polygon>
+        </g>
+    </g>
+</svg>
+<ul class="list-unstyled">
+    <li>Analysis since the beginning of your texts</li>
+    <li>Day of month</li>
+    
+    <li>Emotion analysis</li>
+    
+    <li>Effort levels</li>
+    <li>Emojis</li>
+    <li>Most used words</li>
+    <li>Swear words</li>
+    <li>Love analysis</li>
+    <li>+ all Basic features</li>
+</ul>
+        </a>
+    </div>
+</div>
+    </div>
+    <!-- / Pricing Section -->
+
+
+<!-- Footer Section -->
+<footer>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">iOS Texts</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://iostexts.com/terms-of-service">Terms of Service</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://iostexts.com/privacy-policy">Privacy Policy</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+</footer>
+<!-- / Footer Section -->
+
+<!-- Scripts -->
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-117503884-1"></script>
+<script src="/js/app.js?id=98d45151e5f4323d5b1b"></script>
+</body>
+</html>
